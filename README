@@ -1,0 +1,6 @@
+Simple program to accept data in the form of [['country', number],[..etc]] and return an svg world map 
+altered by the data. The default will display countries in a darker shade of green as their percentage 
+of the whole rises. Further, due to the svg format, the map can be resized to suite the allocated space. 
+For a bit of flair, the map allows for mouse-over events, highlighting a country, displaying its name 
+and data.
+
