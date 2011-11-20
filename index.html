@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style type="text/css">
+            #info{
+                position: absolute;
+                height: 15px;
+                width: 125px;
+                background-color: red;
+                left: 200px;
+                top: 300px;
+                visibility: hidden;
+            }
+            .inline{
+                display: inline;
+                color: black;
+                font-size: 12;
+                text-align: center;
+            }
+            
+            body{
+            }
+            
+        </style>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="coun.js"></script>
+        <script type="text/javascript" src="dataMapper.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="info">
+            <p id="cotag" class="inline">United States</p><p class="inline">:</p><p id="numtag" class="inline">50</p>
+        </div>
+        <h1>Deaths by Country</h1>
+        <object id="map" name="map" data="worldMap.svg" type="image/svg+xml" height="100%" width="100%" ></object>
+        <script type="text/javascript">
+            
+            $(window).load(function(){
+                dataMapper([['us', 5],['ru', 7], ['ca', 13], ['au', 100],['cn', 34],['br', 25]]);
+            });
+            
+        </script>
+    </body>
+</html>
